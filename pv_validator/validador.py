@@ -133,6 +133,11 @@ def _cargar_metricas_referencia() -> dict:
         return json.load(f)
 
 
+def cargar_metricas_referencia() -> dict:
+    """Alias público de _cargar_metricas_referencia, para uso desde fuera del módulo (por ejemplo, el dashboard)."""
+    return _cargar_metricas_referencia()
+
+
 def establecer_referencia(tipo_modelo: str, horas: int, metricas_globales: dict) -> None:
     """
     Guarda las métricas actuales como nueva referencia para este
