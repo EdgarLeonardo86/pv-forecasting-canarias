@@ -12,6 +12,9 @@ conectado con un TFB sobre predicción temprana de ramp events.
 arquitectura, decisiones de diseño, bugs encontrados, resultados y
 limitaciones.
 
+🚀 **[Dashboard en vivo](https://pv-forecasting-canarias-24cfz37h9x4wnkmajonzwl.streamlit.app/)** —
+pruébalo directamente, sin instalar nada.
+
 ## Arquitectura
 
 ```
@@ -92,6 +95,8 @@ el sistema de aviso temprano de ramp events (Agente 5) tiene baja
 precisión/recall con el enfoque actual, documentado con un análisis
 cuantitativo de sensibilidad.
 
-## Próximo paso
+## Dashboard
 
-Dashboard interactivo en Streamlit (en desarrollo).
+Código en [`dashboard/`](./dashboard) — [README](./dashboard/README.md).
+Desplegado en Streamlit Community Cloud (enlace arriba). Para correrlo
+en local: `streamlit run dashboard/app.py` desde la raíz del proyecto.
