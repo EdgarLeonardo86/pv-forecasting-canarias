@@ -1,0 +1,34 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Datos generados (se regeneran ejecutando los agentes)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Variables de entorno / credenciales (por si se añaden Telegram/email reales más adelante)
+.env
+.env.*
+secrets.json
