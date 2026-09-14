@@ -5,7 +5,10 @@ env/
 ENV/
 
 # Datos generados (se regeneran ejecutando los agentes)
-data/
+# Se excluye solo el histórico crudo (pesado, regenerable con el
+# Agente 1). features/models/alertas SÍ se suben, porque el dashboard
+# desplegado en Streamlit Cloud los necesita para funcionar.
+data/raw/
 
 # Python
 __pycache__/
